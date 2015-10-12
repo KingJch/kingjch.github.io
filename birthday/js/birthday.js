@@ -49,6 +49,16 @@ $(function() {
 		"../images/landscape.png",
 		"../images/typing-bg.jpg"
 	];
+	var music_src = [
+    "../audio/typing.wav",
+    "../audio/birthday-song.mp3",
+	];
+
+
+	for(var i=0;i<music_src.length;i++){
+	    loadAudio(music_src[i],function(){
+	    });
+	}
 	new mo.Loader(imgSource,{
 		onLoading : function(count,total){
 		    $loadSouce.text("(" + parseInt(count/total*100) + "%)");
@@ -171,6 +181,11 @@ var callbackArr = {
 	function stopVoice(elem){
 	    elem.pause();
 	    elem.currentTime = 0.0;
+	}
+	function loadAudio(src, callback) {
+    var audio = new Audio(src);
+    audio.onloadedmetadata = callback;
+    audio.src = src;
 	}
 /**touchEvent
  * open the door
