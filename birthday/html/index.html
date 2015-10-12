@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en" data-use-rem="">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+	<title>Happy Birthday!</title>
+	<link rel="stylesheet" href="../css/birthday.css">
+	<style>
+		.load-waper {
+			width: 100%;
+			height: 100%;
+		}
+		.loading-bgT {
+			position: absolute;
+			top: 2rem;
+			left: 50%;
+			width: 80%;
+			height: 2rem;
+			background: url(../images/loading-bg.png) no-repeat;
+			background-size: 100% 100%;
+			-webkit-transform: translate3d(-50%,0,0);
+		}
+		.loading-bgB {
+			position: absolute;
+			bottom: 2rem;
+			left: 50%;
+			width: 80%;
+			height: 2rem;
+			background: url(../images/loading-bg.png) no-repeat;
+			background-size: 100% 100%;
+			-webkit-transform: translate3d(-50%,0,0);
+		}
+		.cake-wapper {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			-webkit-transform: translate3d(-50%,-50%,0);
+			height: 2.1rem;
+			width: 2.5rem;
+		}
+		.no-color-cake {
+			background: url(../images/no-color-cake.png) no-repeat;
+			background-size: 100% 100%;
+		}
+		.color-cake-wapper {
+			position: absolute;
+			height: 2.1rem;
+			width: 2.5rem;
+			overflow: hidden;
+			-webkit-animation: color-cake-wapper 1.5s infinite;
+		}
+		.color-cake {
+			height: 2.1rem;
+			width: 2.5rem;
+			background: url(../images/color-cake.png) no-repeat;
+			background-size: 100% 100%;
+			-webkit-animation: color-cake 1.5s infinite;
+		}
+		.source-num {
+			position: absolute;
+			top: 65%;
+			left: 50%;
+			-webkit-transform: translate3d(-50%,-50%,0);
+			font-size: .3rem;
+    		color: #847070;
+		}
+		@-webkit-keyframes color-cake-wapper {
+			0% {
+				-webkit-transform: translateY(97%);
+			}
+			100% {
+				-webkit-transform: translateY(0);
+			}
+		}
+		@-webkit-keyframes color-cake {
+			0% {
+				-webkit-transform: translateY(-97%);
+			}
+			100% {
+				-webkit-transform: translateY(0);
+			}
+		}
+	</style>
+</head>
+<body>
+	
+	<div class="wapper">
+		<div class="load-waper">
+			<div class="loading-bgT"></div>
+			<div class="cake-wapper no-color-cake">
+				<div class="color-cake-wapper">
+					<div class="color-cake"></div>
+				</div>
+			</div>
+			<div class="source-num">加载中<span></span></div>
+			<div class="loading-bgB"></div>
+		</div>
+		<!--section1-->
+		<section class="section1">
+			<div class="calendar-wapper">
+				<div class="wall-grass"></div>
+				<div class="writing-table">
+					<p class="words">
+						To a friend!
+					</p>
+				</div>
+				<ul class="calendar">
+					<li class="page">
+						<h4 class="month">October</h4>
+						<p class="day">9</p>
+					</li>
+					<li class="page">
+						<h4 class="month">October</h4>
+						<p class="day">10</p>
+					</li>
+					<li class="page">
+						<h4 class="month">October</h4>
+						<p class="day">11</p>
+					</li>
+					<li class="page">
+						<h4 class="month">October</h4>
+						<p class="day">12</p>
+					</li>
+					<li class="page">
+						<h4 class="month">October</h4>
+						<p class="day">13</p>
+					</li>
+					<li class="page">
+						<h4 class="month">October</h4>
+						<p class="day">14</p>
+					</li>
+					<li class="page">
+						<h4 class="month">October</h4>
+						<p class="day">15</p>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<!--end-->
+		<!--section2-->
+		<section class="section2">
+			<div class="door">
+				<div class="door-left"></div>
+				<div class="door-right"></div>
+			</div>
+			<div class="landscape">
+				<div class="mountain-wapper">
+					<div class="mountain"></div>
+				</div>
+				<div class="post-box"></div>
+				<div class="flowers"></div>
+				<div class="maple"></div>
+				<div class="maple-leaf1"></div>
+				<div class="maple-leaf2"></div>
+				<div class="maple-leaf3"></div>
+				<div class="sign"></div>
+				<div class="cloud1"></div>
+				<div class="cloud2"></div>
+			</div>
+		</section>
+		<!--end-->
+		<!--section3-->
+		<section class="section3">
+			<div class="top-side"></div>
+			<div class="left1">
+				<div class="left1-in"></div>
+			</div>
+			<div class="left2">
+				<div class="left2-in"></div>
+			</div>
+			<div class="center"></div>
+			<div class="right1">
+				<div class="right1-in"></div>
+			</div>
+			<div class="right2">
+				<div class="right2-in"></div>
+			</div>
+			<div class="last-bless"></div>
+		</section>
+		<!--end-->
+		<!--section4-->
+		<section class="section4">
+			<div class="type-wapper">
+				<div class="content-wapper">
+					<p class="To"></p>
+					<p class="say-content">
+						
+					</p>
+					<p class="from"></p>
+				</div>
+			</div>
+		</section>
+		<!--end-->
+		<div class="audio-wapper">
+			<audio src="../audio/typing.wav" type="audio/mpeg" preload="auto" loop="loop" class="typing-audio"></audio>
+			<audio src="../audio/birthday-song.mp3" type="audio/mpeg" preload="auto" loop="loop" class="birthday-audio"></audio>
+		</div>
+		<div class="arrows"></div>
+	</div>
+	<script src="../js/grid.js"></script>
+	<script src="../js/zepto.min.js"></script>
+	<script src="../js/loader.min.js"></script>
+	<script src="../js/gesture.min.js"></script>
+	<script src="../js/birthday.js"></script>
+	<script>
+
+		
+	</script>
+</body>
+</html>
