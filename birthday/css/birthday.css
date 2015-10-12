@@ -619,6 +619,7 @@ section {
 }
 .say-content {
 	width: 5.4rem;
+	word-wrap: break-word;
 	text-indent: 18px;
 }
 .from {
