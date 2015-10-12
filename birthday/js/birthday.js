@@ -51,7 +51,7 @@ $(function() {
 	];
 	var music_src = [
     "../audio/typing.wav",
-    "../audio/birthday-song.mp3",
+    "../audio/birthday-song.mp3"
 	];
 
 
