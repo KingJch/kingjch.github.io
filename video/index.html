@@ -11,10 +11,21 @@
 			background-color: #000;
 		}
 	</style>
-
+	<script src="phone.js"></script>
+	<script>
+	window.onload = function() {console.log(11)
+		if("onorientationchange" in window){
+			window.addEventListener("orientationchange",orientationChange,false);
+		}
+		function orientationChange(){
+			document.write(window.orientation);
+		}
+	}
+		
+	</script>
 </head>
 <body>
-	<!--<video src="http://120.85.132.110:9090/OR_FILES_UPLOAD/f1c1ee5b-f181-4ecf-852b-232bea473a15.mp4" controls="controls" autoplay width="100%" height="100%"></video>-->
-	<embed width="100%" height="100%" id="pdf-info" name="plugin" src="http://120.85.132.110:9090/PdfSavePath/44458cdc-af85-47cd-9864-929329ab7eab.pdf" type="application/pdf" internalinstanceid="3" wmode="transparent">
+	<video src="http://120.85.132.110:9090/OR_FILES_UPLOAD/f1c1ee5b-f181-4ecf-852b-232bea473a15.mp4" controls="controls" autoplay width="100%" height="100%"></video>
+	<embed width="100%" height="100%" id="pdf-info" name="plugin" src="http://120.85.132.110:9090/PdfSavePath/44458cdc-af85-47cd-9864-929329ab7eab.pdf" type="application/pdf" internalinstanceid="3">
 </body>
 </html>
